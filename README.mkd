@@ -10,7 +10,7 @@ Features
 ### Manage your income and expenses
 The heart of **Insane** lies in its accounting capabilities. Here is a short list of what can be done :
 
-- enter expenses and incomes
+- enter expenses and profits
 - attach images or pdf files to your entries
 - compute your total balance for the month
 - create custom macros to fit your specific needs
