@@ -20,21 +20,25 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 from gi.repository import Gtk
 
-class MainWindow:
+class MainWindow(object):
 
     def __init__(self):
-        self.builder = Gtk.Builder()
-        self.builder.add_from_file("glade/main_window.glade")
+        self._builder = Gtk.Builder()
+        self._builder.add_from_file("glade/main_window.glade")
 
         # Main window
-        self.main_window = self.builder.get_object("main_window")
+        self.main_window = self._builder.get_object("main_window")
 
         # The show must go on
-        self.builder.connect_signals(MainWindowEventsHandler(self))
+        self._builder.connect_signals(MainWindowEventsHandler(self))
         self.main_window.show_all()
 
+    @property
+    def builder(self):
+        return self._builder
 
-class MainWindowEventsHandler:
+
+class MainWindowEventsHandler(object):
 
     def __init__(self, main_window):
         self.main_window = main_window
