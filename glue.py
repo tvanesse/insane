@@ -41,7 +41,7 @@ class ProfitGlue(object):
         description_text_buffer = builder.get_object("profit_description_buffer")
 
         # Update the widgets
-        bill_ref_entry.set_text(profit.name)
+        bill_ref_entry.set_text(profit.bill_ref)
         description_text_buffer.set_text(profit.detailed)
 
     def display_customer(self, customer):
@@ -49,12 +49,14 @@ class ProfitGlue(object):
         Update the GUI to display the Customer informations on the right panel.
         """
         # Retrieve the widgets to be updated from the main window
-        builder          = self.main_window.builder
-        first_name_entry = builder.get_object("first_name_entry")
-        last_name_entry  = builder.get_object("last_name_entry")
-        email_addr_entry = builder.get_object("email_addr_entry")
+        builder            = self.main_window.builder
+        company_name_entry = builder.get_object("company_name_entry")
+        first_name_entry   = builder.get_object("first_name_entry")
+        last_name_entry    = builder.get_object("last_name_entry")
+        email_addr_entry   = builder.get_object("email_addr_entry")
 
         # Update the widgets
+        company_name_entry.set_text(customer.company_name)
         first_name_entry.set_text(customer.first_name)
         last_name_entry.set_text(customer.last_name)
         email_addr_entry.set_text(str(customer.email))
@@ -69,10 +71,10 @@ if __name__ == "__main__":
     mw = MainWindow()
     p1 = ProfitGlue(mw)
 
-    prof = Profit(name="Great success", detailed="I got paid 1200€ for doing nothing from home.")
+    prof = Profit(bill_ref="WEB-1234", detailed="Un sex-toy wallon pour le festival de la saucisse à la foire de Libramont.")
     p1.display_profit(prof)
 
-    cust = Customer(first_name="Thomas", last_name="Vanesse", email=EmailAddress(user="vanessethomas", domain="gmail.com"))
+    cust = Customer(company_name="Saucisses Wallonnes sprl", first_name="Rémy", last_name="Durand", email=EmailAddress(user="remy", domain="sauciflar.be"))
     p1.display_customer(cust)
 
     Gtk.main()

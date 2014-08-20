@@ -46,7 +46,7 @@ class Person(object):
         """
         self.first_name   = kwargs.get('first_name', None)
         self.last_name    = kwargs.get('last_name', None)
-        self.address      = kwargs.get('address', None)
+        self.address      = kwargs.get('address', Address())
         self.email        = kwargs.get('email', None)
         self.phone_number = kwargs.get('phone_number', None)
 
@@ -61,11 +61,11 @@ class Address(object):
         """
         Initialize an empty Address.
         """
-        self.street_name  = kwargs.get('street_name', None)
+        self.street_name  = kwargs.get('street_name', '')
         self.house_number = kwargs.get('house_number', None)
         self.box_number   = kwargs.get('box_number', None)
-        self.city         = kwargs.get('city', None)
-        self.zip_code     = kwargs.get('zip_code', None)
+        self.city         = kwargs.get('city', '')
+        self.zip_code     = kwargs.get('zip_code', '')
         self.country      = kwargs.get('country', pycountry.countries.get(alpha2='BE'))
 
 

@@ -56,14 +56,19 @@ class Profit(Entry):
         self._bill_ref = bill_ref
         self.vta       = vta
 
+    @property
+    def bill_ref(self):
+        return self._bill_ref
+
 
 
 class Customer(Person):
     """
     A subclass of Person that represents a customer.
     """
-    def __init__(self, **kwargs):
+    def __init__(self, company_name="", **kwargs):
         super(Customer, self).__init__(**kwargs)
+        self.company_name = company_name
 
 
 
