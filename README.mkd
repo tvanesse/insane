@@ -1,14 +1,14 @@
 Insane Manager
 ==============
-**Insane Manager**, or simply **Insane**, is meant to ease the life of freelancers by keeping track and managing all the administrative stuff that he/she has to deal with.
+**Insane Manager**, or simply **Insane**, is meant to ease the life of freelancers by managing all their paperwork on one single tool.
 
-Insane is open-source and release under the GNU license v3.
+Insane is open-source and released under the GNU license v3.
 
 Features
 --------
 
 ### Manage your income and expenses
-The heart of **Insane** lies in its accounting capabilities. Here is a short list of what can be done :
+The heart of **Insane** lies in its accounting capabilities. Here is a short list of the available features :
 
 - enter expenses and profits
 - attach images or pdf files to your entries
@@ -20,4 +20,4 @@ The heart of **Insane** lies in its accounting capabilities. Here is a short lis
 **Insane** comes with the ability to export your data to convenient formats, namely csv and pdf.
 
 ### Visualize your business
-Thanks to its visualization module, **Insane** allows you to quickly get a global idea of the progression of your business.
+Thanks to its visualization module, **Insane** allows you to quickly get a view of your overall progression.
