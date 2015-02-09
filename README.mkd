@@ -1,6 +1,6 @@
 Insane Manager
 ==============
-The software **Insane Manager**, or simply **Insane**, is meant to ease the life of freelancers by keeping track and managing all the administrative stuff that he/she has to deal with.
+**Insane Manager**, or simply **Insane**, is meant to ease the life of freelancers by keeping track and managing all the administrative stuff that he/she has to deal with.
 
 Insane is open-source and release under the GNU license v3.
 
