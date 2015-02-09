@@ -4,20 +4,20 @@ Insane Manager
 
 Insane is open-source and released under the GNU license v3.
 
-Features
+Roadmap
 --------
 
 ### Manage your income and expenses
-The heart of **Insane** lies in its accounting capabilities. Here is a short list of the available features :
+The heart of **Insane** lies in its accounting capabilities. Here is a short list of the features to be implemented:
 
 - enter expenses and profits
 - attach images or pdf files to your entries
 - compute your total balance for the month
 - create custom macros to fit your specific needs
-- ...and much more.
+- ... more to come.
 
 ### Export your data
-**Insane** comes with the ability to export your data to convenient formats, namely csv and pdf.
+**Insane** will come with the ability to export your data to convenient formats, namely csv and pdf.
 
 ### Visualize your business
-Thanks to its visualization module, **Insane** allows you to quickly get a view of your overall progression.
+Thanks to its visualization module, **Insane** will be able to quickly plot a view of your overall business progression.
